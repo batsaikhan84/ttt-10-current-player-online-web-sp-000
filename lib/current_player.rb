@@ -1,5 +1,7 @@
 def turn_count(board)
   
+  
+  
   board.each{|index| }
   
   turn_count = 0
