@@ -1,8 +1,10 @@
 def turn_count(board)
   turn_count = 0
-  turn = "X"
-  board.each{|index| "#{brother}" == turn}
-    turn = "O"
-    turn_count += 1
+  board.each do |position|
+    turn = "X"
+    if "#{position}" == turn
+      turn = "O"
+      turn_count += 1
+    end
   return turn_count
 end
